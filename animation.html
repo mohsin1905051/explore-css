@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        /*--from-er-jaygay-0%-ebong-to-er-jaygay-100%-deya-jabe--*/
+        @keyframes sliding {
+            from {
+                background-color: limegreen;
+                left: 0;
+                top: 0;
+
+            }
+
+            25% {
+                top: 200px;
+                background-color: red;
+                transform: scale(0.5);
+            }
+
+
+            50% {
+                top: 0px;
+                background-color: blue;
+            }
+
+            75% {
+                top: 200px;
+                background-color: yellow;
+                transform: scale(0.5);
+            }
+
+            to {
+                background-color: magenta;
+                left: 900px;
+                top: 0%;
+            }
+        }
+
+        .stage {
+            width: 1000px;
+            height: 400px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: limegreen;
+            border-radius: 50%;
+            animation: sliding 2s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>lets explore Animation</h1>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

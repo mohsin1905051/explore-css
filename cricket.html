@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRICKET</title>
+    <style>
+        .field {
+            border: 1px solid coral;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-45deg);
+            transform-origin: top right;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            left: 560px;
+            transition: transform 1s ease-out 0.24s;
+        }
+
+        .field:hover .ball {
+            transform: translate(1000px, -450px);
+        }
+
+        .bat {
+            transition: transform 0.2s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat"
+            src="image/1162-ms-dhoni-warrior-short-handle-9332921115121-spartan-original-imaf7vhzdm4gebj4.webp" alt="">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>
